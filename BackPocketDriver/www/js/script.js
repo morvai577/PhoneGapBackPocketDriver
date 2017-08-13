@@ -9,12 +9,12 @@ $(document).ready(function() {
 
     open.click(function() {
         overlay.show();
-        $('#wrapper').addClass('toggled');
+        $('.wrapper').addClass('toggled');
     });
 
     overlay.click(function() {
       overlay.hide();
-      $('#wrapper').removeClass('toggled');
+      $('.wrapper').removeClass('toggled');
     })
 });
 

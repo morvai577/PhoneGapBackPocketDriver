@@ -15,50 +15,54 @@
 
 <body>
   <script type="text/javascript" src="cordova.js"></script>
-  <div data-role="page" id="1">
-    <div id="wrapper">
-      <div class="overlay"></div>
-      <!-- Navbar -->
-      <div data-role="header">
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" data-role="none" class="hamburger open-nav">
-                      <span class="hamb-top"></span>
-                      <span class="hamb-middle"></span>
-                      <span class="hamb-bottom"></span>
-                    </button>
-              <h1 class="appName">BackPocketDriver</h1>
-            </div>
-          </div>
-        </nav>
-      </div>
 
+  <!-- Record a Journey Page  -->
+  <div data-role="page" class="wrapper" id="index">
+
+    <div data-role="header">
+      <div class="overlay"></div>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" data-role="none" class="hamburger open-nav">
+              <span class="hamb-top"></span>
+              <span class="hamb-middle"></span>
+              <span class="hamb-bottom"></span>
+            </button>
+            <h1 class="appName">BackPocketDriver</h1>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div data-role="content" class="ui-content">
       <!-- Sidebar -->
       <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
         <ul class="nav sidebar-nav">
           <li>
-            <a href="index.html">
+            <a href="#index">
               <i class="fa fa-car text-center" aria-hidden="true"></i> Record a Journey
             </a>
           </li>
           <li>
-            <a href="goals.html">
+            <a href="#goals">
               <i class="fa fa-star" aria-hidden="true"></i> My Goals
             </a>
           </li>
           <li>
-            <a href="stats.html">
+            <a href="#stats">
               <i class="fa fa-bar-chart" aria-hidden="true"></i> My Journey Statistics
             </a>
           </li>
           <li>
-            <a href="journey.html">
+            <a href="#journey">
               <i class="fa fa-envelope" aria-hidden="true"></i> My Journey History
             </a>
           </li>
           <li>
-            <a href="messages.html">
+            <a href="#messages">
               <i class="fa fa-history" aria-hidden="true"></i> My Messages
             </a>
           </li>
@@ -77,6 +81,49 @@
     </div>
   </div>
 
+  <!-- My Goals Page  -->
+  <div data-role="page" class="wrapper" id="goals">
+    <div data-role="header">
+      <h1>Goals</h1>
+      <a href="" data-rel-"back">Back</a>
+    </div>
+    <div data-role="content" class="ui-content">
+      <p>Goals Page</p>
+    </div>
+  </div>
+
+  <!-- My Journey Stats Page  -->
+  <div data-role="page" class="wrapper" id="stats">
+    <div data-role="header">
+      <h1>Journey Statistics</h1>
+      <a href="" data-rel-"back">Back</a>
+    </div>
+    <div data-role="content" class="ui-content">
+      <p>Journey Statistics Page</p>
+    </div>
+  </div>
+
+  <!-- My Journey History Page  -->
+  <div data-role="page" class="wrapper" id="journey">
+    <div data-role="header">
+      <h1>Journey History</h1>
+      <a href="" data-rel-"back">Back</a>
+    </div>
+    <div data-role="content" class="ui-content">
+      <p>Journey History Page</p>
+    </div>
+  </div>
+
+  <!-- My Messages Page  -->
+  <div data-role="page" class="wrapper" id="messages">
+    <div data-role="header">
+      <h1>Messages</h1>
+      <a href="" data-rel-"back">Back</a>
+    </div>
+    <div data-role="content" class="ui-content">
+      <p>Messages Page</p>
+    </div>
+  </div>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
